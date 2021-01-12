@@ -14,9 +14,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 @Controller
 public class IndexController {
@@ -44,7 +42,6 @@ public class IndexController {
         UserEvent us2 = new UserEvent();
         us2.setUserId("45245346");
         us2.setUserName("hythj5");
-
         List<UserEvent> list = new ArrayList<>();
         list.add(us1);
         list.add(us2);
