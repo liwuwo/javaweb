@@ -7,7 +7,7 @@ public class SubAggregate {
 
     public static void main(String[] args) {
 
-        String aggregateTotal = "ABCD";
+        String aggregateTotal = "ABCDE";
         String[] array = aggregateTotal.split("");
 
         HashMap<String, Integer> aggMap = new HashMap<>();

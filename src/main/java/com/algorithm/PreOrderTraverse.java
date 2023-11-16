@@ -8,9 +8,29 @@ public class PreOrderTraverse {
 
     public static void main(String[] args) {
         BiTreeNode biTreeNode = createBiTreeNode();
-        preOrderTraverseTree1(biTreeNode);
-        preOrderTraverseTree2(biTreeNode);
+        //preOrderTraverseTree1(biTreeNode);
+        //preOrderTraverseTree2(biTreeNode);
+        midOrderTraverse(biTreeNode);
     }
+
+    private static void midOrderTraverse(BiTreeNode biTreeNode){
+        LinkedList<BiTreeNode> stack = new LinkedList<>();
+        stack.add(biTreeNode);
+        while(stack.size()>0){
+            BiTreeNode node = stack.getLast();
+            if(node.leftChild != null){
+                stack.add(node.leftChild);
+            }else{
+                stack.removeLast();
+                System.out.println(node.data);
+                if(node.rightChild != null){
+                    stack.add(node.rightChild);
+                }
+            }
+        }
+
+    }
+
 
     //递归遍历
     private static void preOrderTraverseTree1(BiTreeNode biTreeNode){

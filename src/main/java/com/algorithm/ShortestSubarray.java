@@ -4,7 +4,7 @@ public class ShortestSubarray {
 
     public static void main(String[] args) {
         int[] A = {2,-3,5,0,3,4};
-        //System.out.println(shortestSubarray(A,9));
+        System.out.println(shortestSubarray(A,9));
         String a = "aa";
         String b = new String("aa");
         System.out.println(a.equals(b));
