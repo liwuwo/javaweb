@@ -10,7 +10,7 @@ public class App {
     }
 
     public static void main(String[] args) {
-        //初始化可重入锁
+        //初始化可重入 锁
         final Lock lock = new ReentrantLock();
 
         //第一个条件当屏幕上输出到3
